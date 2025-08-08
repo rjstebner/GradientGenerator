@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #1e1e1e;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.container {
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#preview {
+  margin: 20px 0;
+  height: 150px;
+  border-radius: 8px;
+  border: 2px solid #444;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: #ff4081;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e73370;
+}
+
+.output {
+  margin: 10px 0;
+}
+
+code {
+  background: #111;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  display: block;
+  overflow-wrap: break-word;
+}
+
+#savedGradients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid #444;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gradient Generator</h1>
+
+    <div class="controls">
+      <label>Color 1:
+        <input type="color" id="color1" value="#ff00ff">
+      </label>
+      <label>Color 2:
+        <input type="color" id="color2" value="#00ffff">
+      </label>
+      <label>Angle:
+        <input type="range" id="angle" min="0" max="360" value="90">
+      </label>
+    </div>
+
+    <div id="preview"></div>
+
+    <div class="buttons">
+      <button id="randomBtn">🎲 Randomize</button>
+      <button id="saveBtn">💾 Save Gradient</button>
+      <button id="copyBtn">📋 Copy CSS</button>
+    </div>
+
+    <div class="output">
+      <code id="cssCode"></code>
+    </div>
+
+    <h2>Saved Gradients</h2>
+    <div id="savedGradients"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
